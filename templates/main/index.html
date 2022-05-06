@@ -1,0 +1,348 @@
+{% extends 'partials/nav.html'%}
+{% load static %}
+
+{%block content%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="{%static '/css/style1.css'%}">
+
+    <title>CPEN Space</title>
+  </head>
+  <body>          
+        </div>
+      </div>
+    </nav> 
+    
+    <div class="container-fluid ">
+      <div class="row flex-nowrap">
+          <!-- <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+              <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 ">
+                  <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none ">
+                      <span class="fs-5 d-none d-sm-inline  ">Menu</span>
+                  </a>
+                  <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center  align-items-sm-start" id="menu">
+                      <li class="nav-item ">
+                          <a href="#" class="nav-link h5 align-middle px-0"> <span class="ms-1 d-none d-sm-inline"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/><path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/></svg></span>
+                         Home </a>
+                      </li>
+                      <li>
+                          <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                              <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Membership</span> </a>
+                      </li>
+                          <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                              <li class="w-100">
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Week</span> 1 </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Week</span> 2 </a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#" class="nav-link px-0 align-middle">
+                              <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Gradebook</span></a>
+                      </li>
+                      <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Tests & Quizzes</span> </a>
+                    </li>
+                      <li>
+                          <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                              <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Assignments</span></a>
+                          <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                              <li class="w-100">
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">assignment</span> 1</a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">assignment</span> 2</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                              <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Class Forum</span> </a>
+                              <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                              <li class="w-100">
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Ask a question</span> </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">speak to lecturer</span> </a>
+                              </li>
+                              <li>
+                                  <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">speak to colleagues</span> </a>
+                              </li>
+                              
+                                
+                              
+                          </ul>
+                      </li>
+                      
+                      
+                  </ul>
+                  <hr>
+                  <div class="dropdown pb-4">
+                      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="./media/proj1pic3.webp" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                          <span class="d-none d-sm-inline mx-1">AFEC</span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                          
+                          <li><a class="dropdown-item" href="#">Settings</a></li>
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li>
+                              <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Sign out</a></li>
+                      </ul><br><br><hr><br><br>
+                  </div>
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="./media/proj1pic.png" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="./media/proj1pic2.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="media/proj1pic5.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+              </div>
+          </div>     -->
+      
+      
+          <div class="col">
+            <br>
+            <button class="btn btn-outline-success float-end ">Link</button>
+            <button class="btn btn-outline-success float-end ">Help</button><h4>Welcome AFEC</h4>
+            <br><hr>
+          
+    <div class="row">
+    
+            <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">
+                <button class="btn btn-outline-success float-end sm mt-1" type="submit"><h5>Other Site</h5></button>
+                <button class="btn btn-outline-success float-end sm mt-1" type="submit"><h5>FAQ's</h5></button>
+               
+      
+               <h5 class="text-color white">Current Messages</h5>
+               
+            </div><br><br>
+            <div class="card-body">
+            <h3>Need help with Dashboard? </h3>
+            <h6> If you ned help with Dashboard you can let this be known to the instructor.If you are having problems that may 
+              affect your abilities to complete your assignments </h6>
+             <br>
+              <h5> Check out the online help?</h5>
+              <h6> Visit Dashboard resource page by clicking <a href="https://www.google.com/search?q=google&oq=google&aqs=chrome..69
+              i57j46i67i199i433i465j0i67i131i433j69i60l3j69i65l2.4725j0j7&sourceid=chrome&ie=UTF-8">here</a> to access it</h6>
+              <br>
+               <h5> Contact the Dashboard support team(available Monday-Sunday from 9am-9pm) Email:afecdashboard@gmail.com</h5>
+               <h6> For student email account and CEspace related issues, please email:afec@gmail.com </h6>
+              </div>
+               <br><br><hr>
+            
+               <!-- <div class="card">
+                 <div class="card-header">
+                    <button class="float-left"><h4> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16"><path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/></svg> Digital Circuits CPEN203</h4></button>
+               <br><hr>
+                 </div>
+                 <div class="card-body"> 
+                    <div class="card shadow">
+                      <img src="./media/proj1pic3.webp" alt="">
+                     
+                      
+                    </div>
+                     <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maiores incidunt consequatur quibusdam, quo praesentium excepturi atque consectetur impedit fugit quod hic alias delectus voluptatem quos iste! Velit possimus facilis, vel commodi optio odio cupiditate rem fuga ratione, dolorem atque, totam magni eveniet quaerat natus quam quis modi repudiandae eligendi quos laudantium voluptatibus?
+                        <br>
+                         Rerum earum eligendi reiciendis iusto! Sit quas assumenda ratione, voluptatem, quo libero eveniet id eaque delectus nemo autem natus! Dignissimos cum cumque eligendi? Commodi ea placeat numquam ipsam quos dolorum fugiat labore quaerat animi. Corporis amet repudiandae, ipsa eius fuga nostrum sequi culpa ipsum corrupti libero molestiae perferendis non dolor atque error dicta minima modi quas maxime labore.
+                         <br>
+                         Et, sunt! Nam atque quidem hic id officia sit sint ipsa vel, laboriosam debitis earum fugit rerum mollitia necessitatibus similique commodi explicabo quam architecto ullam iusto voluptates dignissimos veniam enim nostrum! Veniam sed similique ipsa eos corrupti aliquid necessitatibus nobis <br>
+                          nemo aliquam autem tempora quae, corporis dolorum nesciunt recusandae cumque, saepe veritatis, voluptas provident laboriosam debitis! Iste iure harum voluptates ipsum asperiores sit aliquam perferendis soluta expedita? Beatae ut sed reiciendis, consectetur itaque perferendis, accusamus, eos quos officia qui dicta doloremque nostrum. Fugit corporis moles, aut voluptates.</h6>
+                    <br><br><hr>
+                 </div>
+               </div> -->
+                  
+      
+        <div class="card ">
+          <div class="card-header">
+           <div class="month">
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>April<br><span style="font-size:18px">2022</span></li>
+            </ul>
+           </div>
+          </div>
+              <div class="card-body">
+              <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+              </ul>
+              
+              <ul class="days">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li><span class="active">22</span></li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+              </ul>
+            </div>
+        </div>
+
+    <div class="card D-card ">
+          <div class="card-header">
+          <h4>Dashboard </h4>
+
+          <br><br><br><br>
+            
+      </div>
+      <div class="card-body">
+      <img src="./media/proj1pic4.jpg" alt="">
+      <br><br><hr>
+      <h4>Learning Management System</h4>
+     </div>
+      </div>
+      
+
+      
+        <div class="card D-card ">
+        <div class="card-header"> POLLS
+      </div>
+      <div class="card-body">
+        <ul><li>
+          <h5>Lot's of students prefer in-person class than Online</h5>
+        {% for data in data %}
+<ul class="list-group">
+    <div class="row">
+        <div class="col-md-6 ">
+        </div>
+        <div class="col-md-6 text-dark">
+            
+            <small>{{data.author}}</small>
+            <p>{{ data.title}}</p>
+            <a class="btn btn-primary" href="{data.pdf.url}">Download</a>
+        </div>
+    </div>
+    </div>
+</ul>
+</div>
+{% endfor %}
+          
+      </div>
+      </div>
+  </div>
+            </div>    
+     
+            
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <button class="btn btn-outline-success float-end sm mt-1" type="submit"><h5>Other Site</h5></button>
+            <button class="btn btn-outline-success float-end sm mt-1" type="submit"><h5>FAQ's</h5></button>
+          <h6>Book an appointment with a Lecturer</h6>
+          </div>
+          <div class="card-body">
+            <div class="card">
+              <div class="class-header">
+               <img src="./media/download.png" class="rounded mx-auto d-block"alt="">
+              <h4 class="text-center">AFEC End User Support</h4>
+              </div>
+              <div class="card-body">
+              <form>
+                
+                <label for="">First name</label><br>
+                <input type="name" name="" id=""><br><br>
+                <label for="">Last name</label><br>
+            <input type="name" name="" id=""><br><br>
+                <label for="">Email</label><br>
+               <input type="email" name="" id=""><br><br>
+                <label for="">date</label><br>
+                <input type="datetime-local" name="" id=""><br><br>
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Go!</button>
+              </span>
+                
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
+    
+  
+    <!-- Background image -->
+
+<!-- Background image -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+{%endblock%}

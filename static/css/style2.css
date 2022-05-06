@@ -1,0 +1,41 @@
+
+  .header {
+    position: relative;
+    width: 33%;
+    background-image: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),
+    url(images/signup2.jpg);
+    min-height: 100vh;
+    background-position: center;
+}
+.text-box{
+    width: 50%;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.text-box-2{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.id{
+    background: none;
+    border-radius: 2rem;
+}
+
+h1{
+    font-size:50px;
+}
+.acc a{
+    text-decoration: none;
+    color: black;
+}
+
+

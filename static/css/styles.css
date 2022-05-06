@@ -1,0 +1,72 @@
+
+    .header {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(rgba(3, 12, 9, 0.7),rgba(12, 3, 61, 0.7)),
+    url(images/signup2.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.AFEC{
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #fff;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover ::after{
+    width: 100%;
+}
+section{
+    display: flex;
+    padding: 5% 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-side h1{
+    color: #fff;
+    margin: 60px 0 20px 0 ;
+}
+.left-side p{
+    margin: 20px 0 5px 0;
+    color: #fff;
+}
+.right-side img{
+    transition: all 400ms ease;
+}
+
+.right-side img:hover{
+    transform: scale(1.2);
+}

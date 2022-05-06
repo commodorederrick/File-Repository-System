@@ -1,0 +1,117 @@
+.btn{
+    border: 2px solid blue;
+    border: 10px;
+    text-decoration: turquoise;
+    padding: 10px 30px;
+    margin: 3px 1px;
+    background-color: rgb(12, 12, 114);
+    color: white;
+}
+
+.pos{
+  position: sticky;
+  z-index: 1;
+  top:0;
+}
+.card-header{
+    background-color: greenyellow;
+
+}
+.navbar{
+    /* background-color: rgb(12, 12, 114); */
+    position: static;
+    top: 0;
+    width: 100%;
+}
+
+/* .img {
+  font: 20px;
+} */
+.navbar{
+  float: left;
+  display: block;
+}
+/* .navbar :hover{
+  background: rgb(12, 12, 114);
+} */
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 70px 15px;
+  width: 100%;
+  
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+.D-card{
+  margin: 0px ,0px ,0px ,0px;
+}

@@ -1,0 +1,45 @@
+{%extends 'partials/base.html'%}
+
+{% block content%}
+    <div class="card">
+        <div class="card-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">PDF</div>
+                    <div class="col-xl-4">Title and author </div>
+                    <div class="col-xl-4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+            {% for data in data %}
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <a href="{{data.pdf.url}}"><img src="/static/media/pdf.jfif" alt=""></a>
+                    </div>
+                    <div class="col-xl-2"><small>{{data.author}}</small>
+                    <p>{{ data.title}}</p></div>
+                    <div class="col-xl-6">
+                        <ul class="list-group">
+                            <div class="row">
+                                <div class="col-md-6 ">
+                                </div>
+                                <div class="col-md-6 text-dark">
+            
+                                   
+                                    <a class="btn btn-primary" href="{{data.pdf.url}}">Download</a>
+                                </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+            {% endfor %}
+        </div>
+    </div>
+
+        
+  
+{%endblock%}
